@@ -1,0 +1,43 @@
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+myenv/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Local databases (chat history is created at runtime) ---
+*.db
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# --- Vector store / scraped data ---
+# The generated index is rebuilt locally; the judgment PDFs are committed.
+chroma_db/
+data/chroma_db/
+
+# --- Node (not used, kept for safety) ---
+node_modules/
+dist/
+
+# --- Logs ---
+*.log
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Binaries ---
+*.exe
